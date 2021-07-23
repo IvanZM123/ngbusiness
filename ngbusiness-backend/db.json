@@ -1,5 +1,48 @@
 {
-    "articles": [],
+    "articles": [
+        {
+            "id": 1,
+            "title": "Microsoft Surface",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "picture": "https://itblogsogeti.files.wordpress.com/2018/03/microsoft-surface-pro_mc3a1s-que-una-tablet-y-menos-que-un-pc_1.jpg?w=810",
+            "categories": []
+        },
+        {
+            "id": 2,
+            "title": "SmartTV  LG",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "picture": "https://www.adslzone.net/app/uploads-adslzone.net/2020/10/smarttv.jpg",
+            "categories": []
+        },
+        {
+            "id": 3,
+            "title": "Setup Gaming",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "picture": "https://images.samsung.com/is/image/samsung/p5/mx/monitors/odyssey/images/odyssey_f09_mo_03.jpg?$ORIGIN_JPG$",
+            "categories": []
+        },
+        {
+            "id": 4,
+            "title": "LG Rollable Smartphone",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "picture": "https://i.gadgets360cdn.com/large/lg_rollable_smartphone_letsgodigital_1593765771713.jpg",
+            "categories": []
+        },
+        {
+            "id": 5,
+            "title": "Microsoft Surface",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "picture": "https://itblogsogeti.files.wordpress.com/2018/03/microsoft-surface-pro_mc3a1s-que-una-tablet-y-menos-que-un-pc_1.jpg?w=810",
+            "categories": []
+        },
+        {
+            "id": 6,
+            "title": "iPad 10.2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "picture": "https://i1.wp.com/www.smartgeneration.it/wp-content/uploads/2019/03/IPAD-10.5-ROSEGOLD.jpg?fit=1024%2C1024&ssl=1",
+            "categories": []
+        }
+    ],
     "orders": [],
     "users": []
 }
