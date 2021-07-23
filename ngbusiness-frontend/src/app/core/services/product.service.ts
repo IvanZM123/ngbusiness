@@ -24,4 +24,8 @@ export class ProductService {
     list(): Observable<Array<Product>> {
         return from(this.http.get<Array<Product>>(this.url));
     }
+
+    create(product: Omit<Product, "id">): Observable<Product> {
+        return from(this.http.post<Product>(this.url, product));
+    }
 }
