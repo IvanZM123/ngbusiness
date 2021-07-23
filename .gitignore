@@ -1,0 +1,51 @@
+# Backend
+ngbusiness-backend/node_modules
+
+# Frontend
+
+# compiled output
+ngbusiness-frontend/dist
+ngbusiness-frontend/tmp
+ngbusiness-frontend/out-tsc
+ngbusiness-frontend/.netlify
+
+# Only exists if Bazel was run
+ngbusiness-frontend/bazel-out
+
+# dependencies
+ngbusiness-frontend/node_modules
+
+# profiling files
+ngbusiness-frontend/chrome-profiler-events*.json
+
+# IDEs and editors
+ngbusiness-frontend/.idea
+ngbusiness-frontend/.project
+ngbusiness-frontend/.classpath
+ngbusiness-frontend/.c9/
+ngbusiness-frontend/*.launch
+ngbusiness-frontend/.settings/
+ngbusiness-frontend/*.sublime-workspace
+
+# IDE - VSCode
+ngbusiness-frontend/.vscode/*
+ngbusiness-frontend/!.vscode/settings.json
+ngbusiness-frontend/!.vscode/tasks.json
+ngbusiness-frontend/!.vscode/launch.json
+ngbusiness-frontend/!.vscode/extensions.json
+ngbusiness-frontend/.history/*
+
+# misc
+ngbusiness-frontend/.sass-cache
+ngbusiness-frontend/connect.lock
+ngbusiness-frontend/coverage
+ngbusiness-frontend/libpeerconnection.log
+ngbusiness-frontend/npm-debug.log
+ngbusiness-frontend/yarn-error.log
+ngbusiness-frontend/testem.log
+ngbusiness-frontend/typings
+
+# System Files
+ngbusiness-frontend/.DS_Store
+ngbusiness-frontend/Thumbs.db
+

@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Nunito', "Helvetica Neue", sans-serif !important;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.bg-primary-gradient {
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+}
+
+.bg-purple-gradient {
+    background: #FF512F;
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+    background: linear-gradient(to right, #DD2476, #FF512F);
+}
+
+.bg-success-gradient {
+    background: #56ab2f;
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+    background: linear-gradient(to right, #a8e063, #56ab2f);
+}
+
+.avatar-icon {
+    padding: 10px;
+    padding-bottom: 5px;
+}

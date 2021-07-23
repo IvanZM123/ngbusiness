@@ -1,0 +1,28 @@
+<div class="table-responsive-md">
+    <table class="table bg-white">
+        <thead class="text-muted">
+            <tr>
+                <th scope="col" class="p-3">No.</th>
+                <th scope="col" class="p-3">Nombre</th>
+                <th scope="col" class="p-3">NIT</th>
+                <th scope="col" class="p-3">Telefono</th>
+                <th scope="col" class="p-3">Fecha de registro</th>
+            </tr>
+        </thead>
+        <tbody class="p-2">
+            <tr *ngFor="let user of clients">
+                <td class="p-3">#{{ user.id }}</td>
+                <td class="p-3">
+                    <div class="d-flex align-items-center">
+                        <img [src]="user.avatar" height="30px" alt="Avatar" width="30px"
+                            style="object-fit: cover; border-radius: 50%;">
+                        <span class="ms-2">{{ user.fullname }}</span>
+                    </div>
+                </td>
+                <td class="p-3">{{ user.NIT }}</td>
+                <td class="p-3">{{ user.phone }}</td>
+                <td class="p-3">{{ parseDate(user.createdAt) }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

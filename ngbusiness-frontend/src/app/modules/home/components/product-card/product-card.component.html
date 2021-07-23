@@ -1,0 +1,22 @@
+<mat-card class="p-0">
+    <img
+        [src]="product.picture"
+        style="object-fit: cover;"
+        height="250px"
+        class="w-100"
+        alt="Banner"
+    >
+    <mat-card-content class="p-3">
+        <mat-card-title>
+            <strong>{{ product.title }}</strong>
+        </mat-card-title>
+        <mat-card-subtitle>{{ product.description }}</mat-card-subtitle>
+        <mat-chip-list>
+            <mat-chip *ngFor="let category of product?.categories">{{ category.name }}</mat-chip>
+        </mat-chip-list>
+        <mat-card-title
+            style="font-size: 30px"
+            class="pt-3"
+        >${{ product.price }}</mat-card-title>
+    </mat-card-content>
+</mat-card>
