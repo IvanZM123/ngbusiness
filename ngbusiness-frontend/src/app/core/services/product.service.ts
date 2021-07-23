@@ -10,6 +10,7 @@ export interface Product {
     description: string;
     categories: Array<string>;
     picture: string;
+    price: number;
 }
 
 @Injectable({

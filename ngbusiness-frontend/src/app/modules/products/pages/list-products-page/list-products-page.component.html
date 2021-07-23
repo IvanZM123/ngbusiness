@@ -1,1 +1,19 @@
-<p>list-products-page works!</p>
+<div class="container-fluid pb-3">
+    <div class="row justify-content-sm-center justify-content-md-center">
+        <div class="col-12 pb-4">
+            <div class="d-flex align-items-center">
+                <span class="spacer"></span>
+                <button routerLink="/products/new" mat-raised-button color="primary">
+                    <mat-icon>add</mat-icon>
+                    <span class="ms-2">Nuevo producto</span>
+                </button>
+            </div>
+        </div>
+        <div
+            *ngFor="let product of products"
+            class="col-12 col-sm-8 col-md-6 col-lg-4 p-2"
+        >
+            <product-card [product]="product"></product-card>
+        </div>
+    </div>
+</div>

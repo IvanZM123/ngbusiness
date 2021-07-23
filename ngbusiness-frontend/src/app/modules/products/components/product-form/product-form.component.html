@@ -1,0 +1,47 @@
+<mat-card>
+    <mat-card-content>
+        <form>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Titulo</mat-label>
+                  <input matInput autocomplete="off" autofocus>
+                  <mat-hint>Escriba un titulo al producto</mat-hint>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Precio</mat-label>
+                  <input matInput autocomplete="off" autofocus>
+                  <mat-hint>Ingrese el precio del producto</mat-hint>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Descripcion</mat-label>
+                  <textarea matInput autocomplete="off" autofocus></textarea>
+                  <mat-hint>Escriba una descripcion</mat-hint>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Imagen</mat-label>
+                  <input matInput autocomplete="off" autofocus>
+                  <mat-hint>Agrege la URL de una imagen</mat-hint>
+                </mat-form-field>
+            </p>
+            <div class="d-flex align-items-center pt-3">
+                <span class="spacer"></span>
+                <button
+                    routerLink="/products"
+                    mat-button
+                    color="primary"
+                    class="mx-2"
+                >Cancelar</button>
+                <button
+                    mat-raised-button
+                    color="primary"
+                >Guardar</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

@@ -13,7 +13,7 @@ const routes: Routes = [
         component: ListProductsPageComponent
       },
       {
-        path: "create",
+        path: "new",
         component: CreateProductPageComponent
       }
     ]
