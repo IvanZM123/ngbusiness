@@ -1,1 +1,45 @@
-<router-outlet></router-outlet>
+<body id="body-pd">
+    <header class="header mat-elevation-z2" id="header">
+        <div (click)="toggle()" class="header_toggle">
+            <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+        <div class="header_img">
+            <!-- <img src="..." alt="" /> -->
+        </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <i class="bx bxs-business nav_logo-icon"></i>
+                    <span class="nav_logo-name">NgBusiness</span>
+                </a>
+                <div class="nav_list">
+                    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                        class="nav_link">
+                        <i class="bx bx-grid-alt nav_icon"></i>
+                        <span class="nav_name">Dashboard</span>
+                    </a>
+                    <a routerLink="products" routerLinkActive="active" class="nav_link">
+                        <i class="bx bx-box nav_icon"></i>
+                        <span class="nav_name">Productos</span>
+                    </a>
+                    <a routerLink="orders" routerLinkActive="active" class="nav_link">
+                        <i class="bx bx-list-ul nav_icon"></i>
+                        <span class="nav_name">Pedidos</span>
+                    </a>
+                    <a routerLink="clients" routerLinkActive="active" class="nav_link">
+                        <i class="bx bx-user nav_icon"></i>
+                        <span class="nav_name">Clientes</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Container Main start-->
+    <div class="height-100 py-4">
+        <router-outlet></router-outlet>
+    </div>
+    <!--Container Main end-->
+</body>
