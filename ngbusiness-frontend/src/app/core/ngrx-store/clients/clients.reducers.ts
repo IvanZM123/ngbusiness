@@ -18,7 +18,13 @@ const initialClientState = clientAdapter.getInitialState({
 const _clientReducer = createReducer(initialClientState,
     on(actions.SuccessClientList, (state, { clients }) =>
         clientAdapter.addMany(clients, { ...state, error: null })
-    )
+    ),
+
+    on(actions.SuccessClientCreate, (state, { client }) =>
+        clientAdapter.addOne(client, { ...state, error: null })
+    ),
+
+    on(actions.FailureClients, (state, { error }) => ({ ...state, error }))
 );
 
 export function clientReducer(state = initialClientState, action: Action) {

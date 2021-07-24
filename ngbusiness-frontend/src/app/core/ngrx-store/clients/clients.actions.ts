@@ -11,6 +11,16 @@ export const SuccessClientList = createAction(
     props<{ clients: Array<Client> }>()
 );
 
+export const StartClientCreate = createAction(
+    "[Clients] Start Client Create",
+    props<{ payload: Omit<Client, "id"> }>()
+);
+
+export const SuccessClientCreate = createAction(
+    "[Clients] Success Client Create",
+    props<{ client: Client }>()
+);
+
 export const FailureClients = createAction(
     "[Clients] Failure Clients",
     props<{ error: any }>()

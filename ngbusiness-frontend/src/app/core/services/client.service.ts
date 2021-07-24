@@ -24,4 +24,8 @@ export class ClientService {
     list(): Observable<Array<Client>> {
         return from(this.http.get<Array<Client>>(this.url));
     }
+
+    create(data: Omit<Client, "id">): Observable<Client> {
+        return from(this.http.post<Client>(this.url, data));
+    }
 }
