@@ -11,6 +11,8 @@ import { effects, reducers } from './core/ngrx-store/store';
 
 import { AppComponent } from "./bootstrap/app.component";
 
+import { CoreModule } from './core/core.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,6 +28,8 @@ import { AppComponent } from "./bootstrap/app.component";
     StoreModule.forRoot(reducers),
 
     EffectsModule.forRoot(effects),
+
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

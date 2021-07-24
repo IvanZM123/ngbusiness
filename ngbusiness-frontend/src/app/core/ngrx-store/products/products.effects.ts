@@ -7,6 +7,7 @@ import * as actions from "./product.actions";
 
 import { ProductService } from "../../services/product.service";
 import { Router } from "@angular/router";
+import { Notifier } from "../../helpers/Notifier.helper";
 
 @Injectable()
 export class ProductEffects {
@@ -23,6 +24,11 @@ export class ProductEffects {
         mergeMap(({ payload }) => this.productService.create(payload).pipe(
             map(product => actions.SuccessProductCreate({ product })),
             tap(() => this.router.navigate(["/products"])),
+            tap(({ product }) => this.notifier.notification({
+                icon: "check_circle",
+                text: `Se agrego ${ product.title }`,
+                status: "success"
+            })),
             catchError(error => of(actions.FailureProducts({ error })))
         ))
     ));
@@ -30,6 +36,7 @@ export class ProductEffects {
     constructor(
         private actions$: Actions,
         private router: Router,
+        private notifier: Notifier,
         private productService: ProductService
     ) {}
 }
