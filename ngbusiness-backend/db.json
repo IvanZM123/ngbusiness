@@ -78,5 +78,86 @@
     }
   ],
   "orders": [],
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Matt Shadows",
+      "avatar": "https://images.kerrangcdn.com/Avenged-Sevenfold-M-Shadows-solo-header-Kerrang-credit-Jonathan-Weiner.jpg?auto=compress&fit=crop&w=1200",
+      "NIT": "0000-0000-0000-0",
+      "email": "shadows666@gmail.com",
+      "phone": 26630361
+    },
+    {
+      "id": 2,
+      "fullname": "Dave Munstaine",
+      "avatar": "https://mariskalrock.com/wp-content/uploads/2019/04/dave-mustaine-1.jpg",
+      "NIT": "0000-0000-0000-0",
+      "email": "munstaine123@gmail.com",
+      "phone": 22607056
+    },
+    {
+      "id": 3,
+      "fullname": "James Hetfild",
+      "avatar": "https://cuarteldelmetal.com/wp-content/uploads/2020/08/james_1569685506-e1597936197870.jpg",
+      "NIT": "0000-0000-0000-0",
+      "email": "james_hetfield@gmail.com",
+      "phone": 26025570
+    },
+    {
+      "id": 4,
+      "fullname": "Alice Cooper",
+      "avatar": "https://www.todorock.com/wp-content/uploads/2018/12/alice-cooper.jpg",
+      "NIT": "0000-0000-0000-0",
+      "email": "cooper404@gmail.com",
+      "phone": 71296883
+    },
+    {
+      "id": 5,
+      "fullname": "Axl Roses",
+      "avatar": "https://cuarteldelmetal.com/wp-content/uploads/2021/03/axl-rose-2.jpg",
+      "NIT": "0000-0000-0000-0",
+      "email": "axlR000@gmail.com",
+      "phone": 22212596
+    },
+    {
+      "id": 6,
+      "fullname": "Ozzy Osbourne",
+      "avatar": "https://garajedelrock.com/wp-content/uploads/2020/07/ozzy-1-1024x768.jpg",
+      "NIT": "0000-0000-0000-0",
+      "email": "ozzy666@gmail.com",
+      "phone": 21026968
+    },
+    {
+      "id": 7,
+      "fullname": "Matt Tuck",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDLldLNs-gRKSlcXG9Hu_QGUL4CQAWTdu6dtlxw8K8UpNsX7IF6XPxaR8d_0mUfrI5jmM&usqp=CAU",
+      "NIT": "0000-0000-0000-0",
+      "email": "tuck524@gmail.com",
+      "phone": 24261703
+    },
+    {
+      "id": 8,
+      "fullname": "Corey Taylor",
+      "avatar": "https://headbangersla.com/wp-content/uploads/2020/09/Corey-Taylor-solo-credit-Ashley-Osborn-2.jpg",
+      "NIT": "0000-0000-0000-0",
+      "email": "corey0125@gmail.com",
+      "phone": 24410724
+    },
+    {
+      "id": 9,
+      "fullname": "Chris Cornell",
+      "avatar": "https://garajedelrock.com/wp-content/uploads/2020/08/2-anos-sin-chris-cornell.jpg",
+      "NIT": "0000-0000-0000-0",
+      "email": "cornell123@gmail.com",
+      "phone": 23720311
+    },
+    {
+      "id": 10,
+      "fullname": "Chris Motionless",
+      "avatar": "https://i1.wp.com/abtc.ng/wp-content/uploads/2021/05/Motionless.jpg?resize=770%2C515&ssl=1",
+      "NIT": "0000-0000-0000-0",
+      "email": "motionless999@gmail.com",
+      "phone": 22296553
+    }
+  ]
 }
