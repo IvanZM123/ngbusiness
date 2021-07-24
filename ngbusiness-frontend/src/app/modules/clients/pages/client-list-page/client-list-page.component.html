@@ -1,3 +1,12 @@
 <div class="container-fluid pb-3">
-    <client-table [clients]="clients | async"></client-table>
+    <div class="d-flex pb-4">
+        <span class="spacer"></span>
+        <button mat-raised-button color="primary" routerLink="/clients/new">
+            <mat-icon>add</mat-icon>
+            <span class="ms-2">Nuevo cliente</span>
+        </button>
+    </div>
+    <mat-card class="mat-elevation-z3">
+        <client-table [clients]="clients | async"></client-table>
+    </mat-card>
 </div>
