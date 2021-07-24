@@ -9,8 +9,12 @@ import { MatTableModule } from "@angular/material/table";
 import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 
+import { ClientTableComponent } from '../components/client-table/client-table.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    ClientTableComponent
+  ],
   imports: [
     CommonModule,
 
@@ -23,6 +27,8 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     MatFormFieldModule
   ],
   exports: [
+    ClientTableComponent,
+
     MatCardModule,
     MatChipsModule,
     MatButtonModule,

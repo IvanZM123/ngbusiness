@@ -9,6 +9,7 @@ export interface Client {
     fullname: string;
     avatar: string;
     NIT: string;
+    email: string;
     phone: number;
 }
 
