@@ -5,9 +5,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { AppComponent } from "./bootstrap/app.component";
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { effects, reducers } from './core/ngrx-store/store';
 
-import { CoreModule } from "./core/core.module";
+import { AppComponent } from "./bootstrap/app.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CoreModule } from "./core/core.module";
 
     HttpClientModule,
 
-    CoreModule
+    StoreModule.forRoot(reducers),
+
+    EffectsModule.forRoot(effects),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 
-import { ProductService } from 'src/app/core/services/product.service';
+import { Store as NgrxStore } from "@ngrx/store";
+import { Store } from "src/app/core/ngrx-store/store";
+import { StartProductCreate } from 'src/app/core/ngrx-store/products/product.actions';
 
 @Component({
   selector: 'product-form',
@@ -16,9 +18,11 @@ export class ProductFormComponent {
     picture: new FormControl("", [Validators.required])
   });
 
-  constructor(private productService: ProductService) {}
+  constructor(private store: NgrxStore<Store>) {}
 
   create(): void {
-    this.productService.create(this.form.value).subscribe(console.log);
+    this.store.dispatch(StartProductCreate({
+      payload: this.form.value
+    }));
   }
 }
