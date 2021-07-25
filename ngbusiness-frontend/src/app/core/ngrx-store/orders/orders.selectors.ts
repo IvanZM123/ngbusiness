@@ -1,6 +1,7 @@
-import { createFeatureSelector, DefaultProjectorFn, MemoizedSelector } from "@ngrx/store";
+import { createFeatureSelector, createSelector, DefaultProjectorFn, MemoizedSelector } from "@ngrx/store";
 
-import { orderAdapter, OrderState } from "./orders.reducers";
+import { Order } from "../../services/order.service";
+import { OrderState } from "./orders.reducers";
 import { KeyStore } from "../store";
 
 export const getStateOrders: MemoizedSelector<
@@ -9,6 +10,12 @@ export const getStateOrders: MemoizedSelector<
     DefaultProjectorFn<OrderState>
 > = createFeatureSelector<OrderState>(KeyStore.OrderStore);
 
-const { selectAll } = orderAdapter.getSelectors(getStateOrders);
-
-export const getOrderList = selectAll;
+export const getOrderList = (max: number  | undefined = undefined) => createSelector(
+    getStateOrders,
+    ({ entities }) => {
+        const orders: Array<Order> = Object.keys(entities).map(
+            key => entities[key] as Order
+        );
+        return max ? orders.filter((_, index) => (index <= max)) : orders;
+    }
+);

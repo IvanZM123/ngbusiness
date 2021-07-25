@@ -9,5 +9,23 @@
                 <client-table [clients]="clients | async"></client-table>
             </mat-card>
         </div>
+        <div class="col-12 col-xl-4 p-2">
+            <mat-card class="mat-elevation-z3">
+                <div class="d-flex align-items-center pb-3 text-muted">
+                    <i class="bx bx-box"></i>
+                    <span class="ms-3 p-0">Ultimos pedidos</span>
+                </div>
+                <mat-card-content>
+                    <div class="row">
+                        <div
+                            *ngFor="let order of orders | async"
+                            class="col-12 col-sm-6 col-lg-4 col-xl-12"
+                        >
+                            <order-sticker [order]="order"></order-sticker>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
     </div>
 </div>

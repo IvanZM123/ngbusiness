@@ -25,7 +25,7 @@ export class ProductEffects {
             map(product => actions.SuccessProductCreate({ product })),
             tap(() => this.router.navigate(["/products"])),
             tap(({ product }) => this.notifier.notification({
-                icon: "check_circle",
+                icon: "bx bxs-check-circle",
                 text: `Se agrego ${ product.title }`,
                 status: "success"
             })),

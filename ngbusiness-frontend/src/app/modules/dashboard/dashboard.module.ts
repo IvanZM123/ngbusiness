@@ -6,10 +6,12 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { GeneralSharedModule } from 'src/app/core/shared/general-shared.module';
 
 import { DashboardPageComponent } from './page/dashboard-page/dashboard-page.component';
+import { OrderStickerComponent } from './components/order-sticker/order-sticker.component';
 
 @NgModule({
   declarations: [
-    DashboardPageComponent
+    DashboardPageComponent,
+    OrderStickerComponent
   ],
   imports: [
     CommonModule,

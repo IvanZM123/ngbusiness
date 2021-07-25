@@ -1,0 +1,24 @@
+<div class="d-flex align-items-center py-3">
+    <img
+        [src]="order.articles.picture"
+        style="object-fit: cover;"
+        class="rounded-3"
+        height="40px"
+        alt="Banner"
+        width="40px"
+    >
+    <div class="ms-3 w-100">
+        <div class="d-flex align-items-center">
+            <p class="m-0">{{ order.articles.title }}</p>
+            <span class="spacer"></span>
+            <p class="m-0 text-primary">
+                <strong>${{ (order.articles.price * order.quantity) | number }}</strong>
+            </p>
+        </div>
+        <div class="d-flex align-items-center text-muted">
+            <small>{{ order.users.fullname }}</small>
+            <span class="spacer"></span>
+            <small>Items: {{ order.quantity }}</small>
+        </div>
+    </div>
+</div>

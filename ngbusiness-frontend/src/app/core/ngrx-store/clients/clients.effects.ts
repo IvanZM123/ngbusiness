@@ -26,7 +26,7 @@ export class ClientsEffects {
             map(client => actions.SuccessClientCreate({ client })),
             tap(() => this.router.navigate(["/clients"])),
             tap(({ client }) => this.notifier.notification({
-                icon: "check_circle",
+                icon: "bx bxs-check-circle",
                 text: `Se agrego ${ client.fullname } a la lista de clientes`,
                 status: "success"
             })),

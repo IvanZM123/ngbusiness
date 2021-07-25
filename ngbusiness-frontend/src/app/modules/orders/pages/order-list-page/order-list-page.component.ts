@@ -19,7 +19,7 @@ export class OrderListPageComponent implements OnInit {
   constructor(private store: NgrxStore<Store>) {}
 
   ngOnInit(): void {
-    this.orders = this.store.select(getOrderList);
+    this.orders = this.store.select(getOrderList());
     this.store.dispatch(StartOrderList());
   }
 }
