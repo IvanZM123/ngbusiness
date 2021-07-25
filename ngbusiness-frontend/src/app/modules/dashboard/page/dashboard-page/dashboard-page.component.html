@@ -1,1 +1,13 @@
-<p>dashboard-page works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-xl-8 p-2">
+            <mat-card class="p-0 mat-elevation-z3">
+                <div class="d-flex align-items-center p-3 text-muted">
+                    <i class="bx bx-user"></i>
+                    <p class="ms-3 m-0">Ultimos clientes</p>
+                </div>
+                <client-table [clients]="clients | async"></client-table>
+            </mat-card>
+        </div>
+    </div>
+</div>

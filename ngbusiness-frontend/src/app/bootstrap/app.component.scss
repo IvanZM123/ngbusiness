@@ -1,4 +1,4 @@
-$body-font: Nunito, sans-serif;
+$body-font: "Poppins";
 $first-color-light: #d2cbeb;
 $first-color: #9c27b0;
 $white-color: #F7F6FB;
@@ -17,7 +17,7 @@ body {
     position: relative;
     margin: $header-height 0 0 0;
     padding: 0 1rem;
-    font-family: $body-font;
+    font-family: $body-font !important;
     font-size: $normal-font-size;
     transition: .5s
 }
