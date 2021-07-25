@@ -1,1 +1,5 @@
-<p>order-list-page works!</p>
+<div class="container-fluid">
+    <mat-card class="mat-elevation-z3 pb-0">
+        <order-table [orders]="orders | async"></order-table>
+    </mat-card>
+</div>

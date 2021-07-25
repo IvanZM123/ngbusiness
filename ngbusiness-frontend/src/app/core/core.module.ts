@@ -8,7 +8,7 @@ import { NotificationComponent } from './components/notification/notification.co
 
 @NgModule({
   declarations: [
-    NotificationComponent,
+    NotificationComponent
   ],
   imports: [
     CommonModule,

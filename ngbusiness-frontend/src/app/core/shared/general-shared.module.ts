@@ -10,10 +10,12 @@ import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 
 import { ClientTableComponent } from '../components/client-table/client-table.component';
+import { OrderTableComponent } from '../components/order-table/order-table.component';
 
 @NgModule({
   declarations: [
-    ClientTableComponent
+    ClientTableComponent,
+    OrderTableComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +30,7 @@ import { ClientTableComponent } from '../components/client-table/client-table.co
   ],
   exports: [
     ClientTableComponent,
+    OrderTableComponent,
 
     MatCardModule,
     MatChipsModule,
