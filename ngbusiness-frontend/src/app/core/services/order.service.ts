@@ -10,7 +10,7 @@ import { Product } from "./product.service";
 export enum Status {
     Progress = "PROGRESS",
     Complete = "COMPLETE",
-    Pending  = "PEDING"
+    Pending  = "PENDING"
 }
 
 export interface Order {

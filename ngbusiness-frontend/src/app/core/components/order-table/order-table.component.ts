@@ -14,7 +14,7 @@ export class OrderTableComponent {
     const color: Record<Status, string> = {
       COMPLETE: "success",
       PROGRESS: "warning",
-      PEDING: "danger"
+      PENDING: "danger"
     };
     return color[status];
   }
