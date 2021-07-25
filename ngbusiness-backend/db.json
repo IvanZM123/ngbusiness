@@ -77,7 +77,6 @@
       "id": 10
     }
   ],
-  "orders": [],
   "users": [
     {
       "id": 1,
@@ -158,6 +157,114 @@
       "NIT": "0000-0000-0000-0",
       "email": "motionless999@gmail.com",
       "phone": 22296553
+    },
+    {
+      "fullname": "Synyster Gates",
+      "email": "synyster321@gmail.com",
+      "phone": 71240092,
+      "avatar": "https://wordanimeandmetal.files.wordpress.com/2011/10/synyster-gates.jpeg",
+      "NIT": "0000-000000-000-0",
+      "id": 11
+    },
+    {
+      "fullname": "Saul Hudson",
+      "email": "slash666@gmail.com",
+      "phone": 28670013,
+      "avatar": "https://ojo.pe/resizer/5GIEITNmayPnb6i4aRCv-ddtUE4=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/RB6X233KIRFVHNN6EHUEWZDA6A.jpg",
+      "NIT": "0000-000000-000-0",
+      "id": 12
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "usersId": 1,
+      "articlesId": 2,
+      "date": "22.4.2021",
+      "quantity": 2,
+      "address": "Resid Peña Blanca Sda Madre Selva No 1019",
+      "status": "PROGRESS"
+    },
+    {
+      "id": 2,
+      "usersId": 2,
+      "articlesId": 4,
+      "date": "13.3.2021",
+      "quantity": 3,
+      "address": "Ps Gral Escalón Col Escalón Edif 4357 Loc 50",
+      "status": "COMPLETE"
+    },
+    {
+      "id": 3,
+      "usersId": 1,
+      "articlesId": 3,
+      "date": "20.3.2021",
+      "quantity": 1,
+      "address": "Resid Peña Blanca Sda Madre Selva No 1019",
+      "status": "COMPLETE"
+    },
+    {
+      "id": 4,
+      "usersId": 3,
+      "articlesId": 5,
+      "date": "24.4.2021",
+      "quantity": 4,
+      "address": "Bo San Pedro 4 Av Sur Y 2 Cl Ote",
+      "status": "PENDING"
+    },
+    {
+      "id": 5,
+      "usersId": 6,
+      "articlesId": 7,
+      "date": "18.6.2021",
+      "quantity": 1,
+      "address": "Blvd Del Hipódromo Edif Skyligth Center Loc 252",
+      "status": "COMPLETE"
+    },
+    {
+      "id": 6,
+      "usersId": 8,
+      "articlesId": 4,
+      "date": "20.6.2021",
+      "quantity": 2,
+      "address": "C C Plaza Suiza 2O Nvl Loc B-57",
+      "status": "PROGRESS"
+    },
+    {
+      "id": 7,
+      "usersId": 4,
+      "articlesId": 4,
+      "date": "6.6.2021",
+      "quantity": 6,
+      "address": "Cl José Mariano Méndez Y 8 Av Sur",
+      "status": "PENDING"
+    },
+    {
+      "id": 8,
+      "usersId": 7,
+      "articlesId": 9,
+      "date": "6.6.2021",
+      "quantity": 1,
+      "address": "57 Cl Pte Ent 18 Y 20 Av Sur",
+      "status": "PENDING"
+    },
+    {
+      "id": 9,
+      "usersId": 10,
+      "articlesId": 10,
+      "date": "14.2.2021",
+      "quantity": 1,
+      "address": "57 Cl Pte Ent 18 Y 20 Av Sur",
+      "status": "COMPLETE"
+    },
+    {
+      "id": 10,
+      "usersId": 5,
+      "articlesId": 8,
+      "date": "15.5.2021",
+      "quantity": 1,
+      "address": "Bo San Pedro 4 Av Sur Y 2 Cl Ote",
+      "status": "PROGRESS"
     }
   ]
 }
