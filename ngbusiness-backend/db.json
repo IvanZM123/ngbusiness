@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Microsoft Surface",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "picture": "https://www.techadvisor.com/cmsdata/reviews/3799750/ms_surface_laptop_go_review_12_thumb800.jpg",
       "categories": [],
       "price": 865.95
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "SmartTV  LG",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "picture": "https://www.adslzone.net/app/uploads-adslzone.net/2020/10/smarttv.jpg",
       "categories": [],
       "price": 2265.95
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Setup Gaming",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "picture": "https://images.samsung.com/is/image/samsung/p5/mx/monitors/odyssey/images/odyssey_f09_mo_03.jpg?$ORIGIN_JPG$",
       "categories": [],
       "price": 4895.4
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "LG Rollable Smartphone",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "picture": "https://i.gadgets360cdn.com/large/lg_rollable_smartphone_letsgodigital_1593765771713.jpg",
       "categories": [],
       "price": 415.9
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "title": "Auriculares Phillips",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "picture": "https://www.coopehogar.coop/media/ch/publico/articulos/8/5/5/855ceba397f3f77a35b3f861250d88ff",
       "categories": [],
       "price": 40
@@ -43,38 +43,82 @@
     {
       "id": 6,
       "title": "iPad 10.2",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "picture": "https://i1.wp.com/www.smartgeneration.it/wp-content/uploads/2019/03/IPAD-10.5-ROSEGOLD.jpg?fit=1024%2C1024&ssl=1",
       "categories": [],
       "price": 325.95
     },
     {
       "title": "Mouse Gamer",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "price": 35.88,
       "picture": "https://images.jumpseller.com/store/chileideas1/7085355/X_chi000379_21356.jpg?1601478595",
       "id": 7
     },
     {
       "title": "Xbox One",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "price": 1355.98,
       "picture": "https://i2.wp.com/hipertextual.com/wp-content/uploads/2021/06/xbox-one-scaled.jpg?fit=2560%2C1530&ssl=1",
       "id": 8
     },
     {
       "title": "Play Station 5",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "price": 1700,
       "picture": "https://c.files.bbci.co.uk/C6C6/production/_112868805_screenshot-127.png",
       "id": 9
     },
     {
       "title": "Sofa Minimalista",
-      "description": "Es uno de los mejores sillones dentro del mercado",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "price": 1250.75,
       "picture": "https://i.pinimg.com/736x/a8/98/65/a89865767110a244eab5497bfc4296bb.jpg",
       "id": 10
+    },
+    {
+      "title": "Lampara de noche",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+      "price": 45,
+      "picture": "https://redaccionhorizontemedia.files.wordpress.com/2019/05/4-20.jpg?quality=80&strip=all",
+      "id": 11
+    },
+    {
+      "title": "Cuadro decorativo",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+      "price": 76.8,
+      "picture": "https://www.cuadrosdekorarte.com/wp-content/uploads/2021/01/cuadro-decorativo-para-comedor-modelo-campo-de-flores.jpg",
+      "id": 12
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Computadoras"
+    },
+    {
+      "id": 2,
+      "name": "Tecnologia"
+    },
+    {
+      "id": 3,
+      "name": "Muebles"
+    },
+    {
+      "id": 4,
+      "name": "Lamparas"
+    },
+    {
+      "id": 5,
+      "name": "Laptops"
+    },
+    {
+      "id": 6,
+      "name": "Smartphones"
+    },
+    {
+      "id": 7,
+      "name": "SmartTvs"
     }
   ],
   "users": [
@@ -173,6 +217,30 @@
       "avatar": "https://ojo.pe/resizer/5GIEITNmayPnb6i4aRCv-ddtUE4=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/RB6X233KIRFVHNN6EHUEWZDA6A.jpg",
       "NIT": "0000-000000-000-0",
       "id": 12
+    },
+    {
+      "fullname": "Jonathan Davis",
+      "email": "jonathan_davis@gmail.com",
+      "phone": 22550100,
+      "avatar": "https://bodysize.org/wp-content/uploads/2020/03/Jonathan-Davis-300x400.jpg",
+      "NIT": "0000-000000-000-0",
+      "id": 13
+    },
+    {
+      "fullname": "Chad Gray",
+      "email": "chad_mudvayne@gmail.com",
+      "phone": 22915600,
+      "avatar": "https://i.pinimg.com/originals/48/72/f7/4872f725cedaa0b9371044064da2df1e.jpg",
+      "NIT": "0000-000000-000-0",
+      "id": 14
+    },
+    {
+      "fullname": "Lemmy Killmister",
+      "email": "lemmy666@gmail.com",
+      "phone": 45012245,
+      "avatar": "https://i1.wp.com/www.sopitas.com/wp-content/uploads/2014/12/lem2-e1419464659316.jpg",
+      "NIT": "0000-000000-000-0",
+      "id": 15
     }
   ],
   "orders": [
