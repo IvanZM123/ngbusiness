@@ -11,11 +11,13 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 
 import { ClientTableComponent } from '../components/client-table/client-table.component';
 import { OrderTableComponent } from '../components/order-table/order-table.component';
+import { BasicStatsCardComponent } from '../components/basic-stats-card/basic-stats-card.component';
 
 @NgModule({
   declarations: [
     ClientTableComponent,
-    OrderTableComponent
+    OrderTableComponent,
+    BasicStatsCardComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +33,7 @@ import { OrderTableComponent } from '../components/order-table/order-table.compo
   exports: [
     ClientTableComponent,
     OrderTableComponent,
+    BasicStatsCardComponent,
 
     MatCardModule,
     MatChipsModule,

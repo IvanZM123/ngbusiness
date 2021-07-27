@@ -1,14 +1,26 @@
 <div class="container-fluid">
     <div class="row">
+        <div class="col-12 p-2">
+            <div class="row">
+                <div
+                    *ngFor="let item of items"
+                    class="col-12 col-sm-6 col-lg-4 p-2"
+                >
+                    <basic-stats-card [item]="item"></basic-stats-card>
+                </div>
+            </div>
+        </div>
+        
         <div class="col-12 col-xl-8 p-2">
             <mat-card class="p-0 mat-elevation-z3">
                 <div class="d-flex align-items-center p-3 text-muted">
                     <i class="bx bx-user"></i>
                     <p class="ms-3 m-0">Ultimos clientes</p>
                 </div>
-                <client-table [clients]="clients | async"></client-table>
+                <client-table [clients]="clients"></client-table>
             </mat-card>
         </div>
+
         <div class="col-12 col-xl-4 p-2">
             <mat-card class="mat-elevation-z3">
                 <div class="d-flex align-items-center pb-3 text-muted">
@@ -18,7 +30,7 @@
                 <mat-card-content>
                     <div class="row">
                         <div
-                            *ngFor="let order of orders | async"
+                            *ngFor="let order of orders"
                             class="col-12 col-sm-6 col-lg-4 col-xl-12"
                         >
                             <order-sticker [order]="order"></order-sticker>

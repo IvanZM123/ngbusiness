@@ -1,0 +1,12 @@
+<div class="card border-0 bg-white mat-elevation-z3 {{ item.color }}">
+    <div class="card-body d-flex align-items-center p-4">
+        <div>
+            <h1 class="mb-2" style="font-size: 35px;">
+                <strong>{{ item.quantity }}</strong>
+            </h1>
+            <p class="m-0">{{ item.title }}</p>
+        </div>
+        <span class="spacer"></span>
+        <i [class]="item.icon" style="font-size: 50px;"></i>
+    </div>
+</div>
