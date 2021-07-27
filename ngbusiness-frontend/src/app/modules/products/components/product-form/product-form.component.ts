@@ -21,8 +21,10 @@ export class ProductFormComponent {
   constructor(private store: NgrxStore<Store>) {}
 
   create(): void {
-    this.store.dispatch(StartProductCreate({
-      payload: this.form.value
-    }));
+    this.store.dispatch(
+      StartProductCreate({
+        payload: this.form.value
+      })
+    );
   }
 }

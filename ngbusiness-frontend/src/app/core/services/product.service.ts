@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { from, Observable } from "rxjs";
+import { Observable } from "rxjs";
 
 import { environment } from "src/environments/environment";
 
@@ -22,10 +22,10 @@ export class ProductService {
     constructor(private http: HttpClient) {}
 
     list(): Observable<Array<Product>> {
-        return from(this.http.get<Array<Product>>(this.url));
+        return this.http.get<Array<Product>>(this.url);
     }
 
     create(product: Omit<Product, "id">): Observable<Product> {
-        return from(this.http.post<Product>(this.url, product));
+        return this.http.post<Product>(this.url, product);
     }
 }

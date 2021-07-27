@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { from, Observable } from "rxjs";
+import { Observable } from "rxjs";
 
 import { environment } from "src/environments/environment";
 
@@ -35,6 +35,6 @@ export class OrderService {
 
     list(): Observable<Array<Order>> {
         const url: string = `${ this.url }?_expand=users&_expand=articles`
-        return from(this.http.get<Array<Order>>(url));
+        return this.http.get<Array<Order>>(url);
     }
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { from, Observable } from "rxjs";
+import { Observable } from "rxjs";
 
 import { environment } from "src/environments/environment";
 
@@ -22,10 +22,10 @@ export class ClientService {
     constructor(private http: HttpClient) {}
 
     list(): Observable<Array<Client>> {
-        return from(this.http.get<Array<Client>>(this.url));
+        return this.http.get<Array<Client>>(this.url);
     }
 
     create(data: Omit<Client, "id">): Observable<Client> {
-        return from(this.http.post<Client>(this.url, data));
+        return this.http.post<Client>(this.url, data);
     }
 }
