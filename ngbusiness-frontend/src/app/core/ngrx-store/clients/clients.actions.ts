@@ -21,6 +21,16 @@ export const SuccessClientCreate = createAction(
     props<{ client: Client }>()
 );
 
+export const StartClientRemove = createAction(
+    "[Clients] Start Client Remove",
+    props<{ payload: Client }>()
+);
+
+export const SuccessClientRemove = createAction(
+    "[Clients] Success Client Remove",
+    props<{ client: Client }>()
+);
+
 export const FailureClients = createAction(
     "[Clients] Failure Clients",
     props<{ error: any }>()

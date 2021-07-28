@@ -30,7 +30,34 @@ export class ClientsEffects {
                 text: `Se agrego ${ client.fullname } a la lista de clientes`,
                 status: "success"
             })),
-            catchError(error => of(actions.FailureClients({ error })))
+            catchError(error => {
+                this.notifier.notification({
+                    text: error.message,
+                    icon: "bx bxs-error",
+                    status: "danger"
+                });
+                return of(actions.FailureClients({ error }));
+            })
+        ))
+    ));
+
+    remove$ = createEffect(() => this.actions$.pipe(
+        ofType(actions.StartClientRemove),
+        mergeMap(({ payload }) => this.clientService.remove(payload.id).pipe(
+            map(() => actions.SuccessClientRemove({ client: payload })),
+            tap(() => this.notifier.notification({
+                text: `${ payload.fullname } fue removido con exito`,
+                icon: "bx bxs-check-circle",
+                status: "success"
+            })),
+            catchError(error => {
+                this.notifier.notification({
+                    text: error.message,
+                    icon: "bx bxs-error",
+                    status: "danger"
+                });
+                return of(actions.FailureClients({ error }));
+            })
         ))
     ));
 

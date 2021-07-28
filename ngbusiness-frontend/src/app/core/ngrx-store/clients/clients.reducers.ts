@@ -24,6 +24,10 @@ const _clientReducer = createReducer(initialClientState,
         clientAdapter.addOne(client, { ...state, error: null })
     ),
 
+    on(actions.SuccessClientRemove, (state, { client }) =>
+        clientAdapter.removeOne(client.id, { ...state, error: null })
+    ),
+
     on(actions.FailureClients, (state, { error }) => ({ ...state, error }))
 );
 

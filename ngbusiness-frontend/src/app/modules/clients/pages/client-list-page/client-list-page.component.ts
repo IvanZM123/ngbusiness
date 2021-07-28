@@ -6,7 +6,7 @@ import { Store } from "src/app/core/ngrx-store/store";
 
 import { StartClientList } from 'src/app/core/ngrx-store/clients/clients.actions';
 
-import { getListClients } from 'src/app/core/ngrx-store/clients/clients.selectors';
+import { getClientList, getListClients } from 'src/app/core/ngrx-store/clients/clients.selectors';
 
 import { Client } from 'src/app/core/services/client.service';
 

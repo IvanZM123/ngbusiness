@@ -28,4 +28,9 @@ export class ClientService {
     create(data: Omit<Client, "id">): Observable<Client> {
         return this.http.post<Client>(this.url, data);
     }
+
+    remove(id: string | number): Observable<Client> {
+        const url: string = `${ this.url }/${ id }`;
+        return this.http.delete<Client>(url);
+    }
 }
