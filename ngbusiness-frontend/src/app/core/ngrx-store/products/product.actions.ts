@@ -21,6 +21,16 @@ export const SuccessProductCreate = createAction(
     props<{ product: Product }>()
 );
 
+export const StartProductRemove = createAction(
+    "[Products] Start Product Remove",
+    props<{ payload: Product }>()
+);
+
+export const SuccessProductRemove = createAction(
+    "[Products] Success Product Remove",
+    props<{ product: Product }>()
+);
+
 export const FailureProducts = createAction(
     "[Products] Failure Products",
     props<{ error: any }>()

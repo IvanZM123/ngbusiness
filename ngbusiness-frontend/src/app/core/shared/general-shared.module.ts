@@ -8,6 +8,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatMenuModule } from "@angular/material/menu";
 
 import { ClientTableComponent } from '../components/client-table/client-table.component';
 import { OrderTableComponent } from '../components/order-table/order-table.component';
@@ -28,7 +29,8 @@ import { BasicStatsCardComponent } from '../components/basic-stats-card/basic-st
     MatIconModule,
     MatTableModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatMenuModule
   ],
   exports: [
     ClientTableComponent,
@@ -41,7 +43,8 @@ import { BasicStatsCardComponent } from '../components/basic-stats-card/basic-st
     MatIconModule,
     MatTableModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatMenuModule
   ],
 })
 export class GeneralSharedModule {}

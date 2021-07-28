@@ -16,7 +16,7 @@ export const initialProductState = productAdapter.getInitialState({
 });
 
 const _productReducer = createReducer(initialProductState,
-    // Add all the lessons.
+    // Add all the products.
     on(actions.SuccessProductList, (state, { products }) =>
         productAdapter.addMany(products,
             { ...state, error: null, notification: null }
@@ -24,7 +24,11 @@ const _productReducer = createReducer(initialProductState,
     ),
 
     on(actions.SuccessProductCreate, (state, { product }) =>
-            productAdapter.addOne(product, { ...state, error: null })
+        productAdapter.addOne(product, { ...state, error: null })
+    ),
+
+    on(actions.SuccessProductRemove, (state, { product }) =>
+        productAdapter.removeOne(product.id, { ...state, error: null })
     ),
 
     // Add the error.

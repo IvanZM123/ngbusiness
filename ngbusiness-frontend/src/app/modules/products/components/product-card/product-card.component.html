@@ -7,9 +7,25 @@
         style="object-fit: contain;"
     >
     <mat-card-content class="p-3">
-        <mat-card-title>
-            <strong>{{ product.title }}</strong>
-        </mat-card-title>
+        <div class="d-flex align-items-center">
+            <mat-card-title>
+                <strong>{{ product.title }}</strong>
+            </mat-card-title>
+            <span class="spacer"></span>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button (click)="remove()" mat-menu-item class="d-flex align-items-center w-100">
+                    <i class='bx bxs-trash-alt'></i>
+                    <span class="ms-3">Eliminar producto</span>
+                </button>
+                <button mat-menu-item class="d-flex align-items-center w-100">
+                    <i class="bx bxs-edit"></i>
+                    <span class="ms-3">Editar producto</span>
+                </button>
+            </mat-menu>
+        </div>
         <mat-card-subtitle>{{ product.description }}</mat-card-subtitle>
         <h1>${{ product.price }}</h1>
     </mat-card-content>

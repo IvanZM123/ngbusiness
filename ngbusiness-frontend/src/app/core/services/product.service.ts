@@ -28,4 +28,9 @@ export class ProductService {
     create(product: Omit<Product, "id">): Observable<Product> {
         return this.http.post<Product>(this.url, product);
     }
+
+    remove(id: string | number): Observable<object> {
+        const url: string = `${ this.url }/${ id }`;
+        return this.http.delete<object>(url);
+    }
 }

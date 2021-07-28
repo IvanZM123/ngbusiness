@@ -33,6 +33,26 @@ export class ProductEffects {
         ))
     ));
 
+    remove$ = createEffect(() => this.actions$.pipe(
+        ofType(actions.StartProductRemove),
+        mergeMap(({ payload }) => this.productService.remove(payload.id).pipe(
+            map(() => actions.SuccessProductRemove({ product: payload })),
+            tap(() => this.notifier.notification({
+                text: `${ payload.title } fue removido de los productos`,
+                icon: "bx bxs-check-circle",
+                status: "success"
+            }))
+        )),
+        catchError(error => {
+            this.notifier.notification({
+                text: error.message,
+                icon: "bx bxs-error",
+                status: "danger"
+            });
+            return of(actions.FailureProducts({ error }));
+        })
+    ));
+
     constructor(
         private actions$: Actions,
         private router: Router,
