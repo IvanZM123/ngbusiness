@@ -17,12 +17,11 @@
       "price": 2265.95
     },
     {
-      "id": 3,
       "title": "Setup Gaming",
+      "price": 4895.4,
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
       "picture": "https://images.samsung.com/is/image/samsung/p5/mx/monitors/odyssey/images/odyssey_f09_mo_03.jpg?$ORIGIN_JPG$",
-      "categories": [],
-      "price": 4895.4
+      "id": 3
     },
     {
       "id": 4,
@@ -96,6 +95,20 @@
       "price": 655.9,
       "picture": "https://img.global.news.samsung.com/cl/wp-content/uploads/2020/06/Aire-Acondicionado-2.jpeg",
       "id": 13
+    },
+    {
+      "title": "Ventana Japonesa",
+      "price": 155.8,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+      "picture": "https://decortips.com/es/wp-content/uploads/2019/02/diseno-ventanas-casa.jpg",
+      "id": 15
+    },
+    {
+      "title": "Mesa moderna",
+      "price": 1235.65,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+      "picture": "https://i.pinimg.com/originals/b6/21/f0/b621f0b88d386f65c896f59f0cfe8276.jpg",
+      "id": 16
     }
   ],
   "categories": [
