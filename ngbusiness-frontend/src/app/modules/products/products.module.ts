@@ -10,13 +10,15 @@ import { CreateProductPageComponent } from './pages/create-product-page/create-p
 
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
+import { EditProductPageComponent } from './pages/edit-product-page/edit-product-page.component';
 
 @NgModule({
   declarations: [
     ListProductsPageComponent,
     CreateProductPageComponent,
     ProductCardComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    EditProductPageComponent
   ],
   imports: [
     CommonModule,
