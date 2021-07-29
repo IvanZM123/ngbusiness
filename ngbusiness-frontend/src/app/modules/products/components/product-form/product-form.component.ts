@@ -1,11 +1,12 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
+import { Component, Input, OnChanges } from '@angular/core';
+import { FormControl, FormGroup, Validators } from "@angular/forms";
 
 import { Product } from 'src/app/core/services/product.service';
 
 import { Store as NgrxStore } from "@ngrx/store";
 import { Store } from "src/app/core/ngrx-store/store";
-import { StartProductCreate } from 'src/app/core/ngrx-store/products/product.actions';
+
+import { StartProductCreate, StartProductUpdate } from 'src/app/core/ngrx-store/products/product.actions';
 
 @Component({
   selector: 'product-form',
@@ -28,10 +29,17 @@ export class ProductFormComponent implements OnChanges {
   }
 
   submit(): void {
+    // Update product.
     if (this.product) {
-      return console.log("Actualizar");
+      return this.store.dispatch(
+        StartProductUpdate({
+          id: this.product.id,
+          data: this.form.value
+        })
+      );
     }
 
+    // Create product.
     this.store.dispatch(
       StartProductCreate({
         payload: this.form.value

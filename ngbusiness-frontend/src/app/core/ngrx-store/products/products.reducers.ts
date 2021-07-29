@@ -27,6 +27,13 @@ const _productReducer = createReducer(initialProductState,
         productAdapter.addOne(product, { ...state, error: null })
     ),
 
+    on(actions.SuccessProductUpdate, (state, { product }) =>
+        productAdapter.updateOne(
+            { id: product.id, changes: product },
+            { ...state, error: null }
+        )
+    ),
+
     on(actions.SuccessProductRemove, (state, { product }) =>
         productAdapter.removeOne(product.id, { ...state, error: null })
     ),

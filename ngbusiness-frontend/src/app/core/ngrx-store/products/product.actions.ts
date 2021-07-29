@@ -21,6 +21,19 @@ export const SuccessProductCreate = createAction(
     props<{ product: Product }>()
 );
 
+export const StartProductUpdate = createAction(
+    "[Products] Start Product Update",
+    props<{
+        id: string | number;
+        data: Omit<Product, "id">
+    }>()
+);
+
+export const SuccessProductUpdate = createAction(
+    "[Products] Success Product Update",
+    props<{ product: Product }>()
+);
+
 export const StartProductRemove = createAction(
     "[Products] Start Product Remove",
     props<{ payload: Product }>()

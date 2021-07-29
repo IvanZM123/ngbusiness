@@ -29,6 +29,14 @@ export class ProductService {
         return this.http.post<Product>(this.url, product);
     }
 
+    update(
+        id: string | number,
+        data: Omit<Product, "id">
+    ): Observable<Product> {
+        const url: string = `${ this.url }/${ id }`;
+        return this.http.put<Product>(url, data);
+    }
+
     remove(id: string | number): Observable<object> {
         const url: string = `${ this.url }/${ id }`;
         return this.http.delete<object>(url);

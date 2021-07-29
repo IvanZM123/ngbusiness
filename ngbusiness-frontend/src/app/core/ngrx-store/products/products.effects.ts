@@ -33,6 +33,27 @@ export class ProductEffects {
         ))
     ));
 
+    update$ = createEffect(() => this.actions$.pipe(
+        ofType(actions.StartProductUpdate),
+        mergeMap(({ id, data }) => this.productService.update(id, data).pipe(
+            map(product => actions.SuccessProductUpdate({ product })),
+            tap(() => this.router.navigate(["/products"])),
+            tap(({ product }) => this.notifier.notification({
+                text: `${ product.title } ha sido modificado con exito`,
+                icon: "bx bx-edit-alt",
+                status: "success"
+            })),
+            catchError(error => {
+                this.notifier.notification({
+                    text: error.message,
+                    icon: "bx bxs-error",
+                    status: "danger"
+                });
+                return of(actions.FailureProducts({ error }));
+            })
+        ))
+    ));
+
     remove$ = createEffect(() => this.actions$.pipe(
         ofType(actions.StartProductRemove),
         mergeMap(({ payload }) => this.productService.remove(payload.id).pipe(
